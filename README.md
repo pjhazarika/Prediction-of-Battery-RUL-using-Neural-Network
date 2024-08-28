@@ -1,2 +1,9 @@
-# Prediction-of-Battery-RUL-using-Neural-Network
-Battery Remaining Useful Life (RUL)|  python | Neural Network | numpy| pandas | tensorflow
+DATASET:
+
+The Hawaii Natural Energy Institute conducted an in-depth examination of 14 NMC-LCO 18650 batteries, each with a nominal capacity of 2.8 Ah. These batteries were cycled 1000 times under controlled conditions: at a temperature of 25°C, with a constant current-constant voltage (CC-CV) charge rate of C/2 and a discharge rate of 1.5C.
+
+From this dataset, features were derived that capture the voltage and current behavior across each cycle. These features include metrics such as discharge time, time spent at specific voltages, and charging times, among others. The ultimate goal is to use these features to predict the remaining useful life (RUL) of the batteries, which is a critical factor in understanding battery performance and longevity. The dataset provides a summary of the performance and degradation patterns of the 14 batteries throughout the cycling process, serving as a valuable resource for predictive modeling.
+
+NEURAL NETWORK MODEL:
+
+A neural network model was developed to predict the Remaining Useful Life (RUL) of batteries using four different optimizers: Adam, SGD, RMSprop, and Adamax. After evaluating the model's performance, Adamax emerged as the most effective optimizer, while SGD was the least effective. The model architecture was designed with three hidden layers, consisting of 64, 128, and 64 neurons, respectively, using 'reLU' as the activation function. The output layer, designed for regression, did not include an activation function, making it suitable for predicting continuous values like RUL. The choice of optimizers and the network architecture were refined through a process of trial and error. This methodical approach highlights the importance of optimizing both the network architecture and the choice of optimizer to achieve the best predictive performance.
